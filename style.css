@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  margin-top: 5em;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: white;
+}
+
+#btn-start {
+  display: block;
+  margin: 0 auto;
+  font-family: "Press Start 2P", cursive;
+  padding: 0.5em;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 400px;
+  min-height: 400px;
+  border: 2px solid white;
+}
+
+.gameover {
+  visibility: hidden;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  left: 85px;
+  top: 150px;
+}
+
+@media screen and (orientation: portrait) {
+  .gameover {
+    left: 90px;
+  }
+}
+
+.grid,
+#btn-start {
+  box-shadow: 0px 1px 7px 4px rgba(245, 244, 244, 0.62);
+  -webkit-box-shadow: 0px 1px 7px 4px rgba(245, 244, 244, 0.62);
+  -moz-box-shadow: 0px 1px 7px 4px rgba(245, 244, 244, 0.62);
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+}
+
+.snake {
+  background-color: green;
+}
+
+.apple {
+  background-color: red;
+  border-radius: 50px;
+}
